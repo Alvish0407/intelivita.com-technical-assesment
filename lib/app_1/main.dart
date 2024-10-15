@@ -30,8 +30,11 @@ Here, I am using [StaggeredGridView].
 */
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:intelivita_technical_assesment/app_1/app/app.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(const MyApp1());
 }
